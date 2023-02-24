@@ -59,8 +59,7 @@ min_outage = min(outages.values())
 max_outage = max(outages.values())
 
 # create summary of outages
-summary = f'''
-Start Date:     {start_date}
+summary = f'''Start Date:     {start_date}
 End Date:       {end_date}
 Days:           {(end_date - start_date).days}
 # of Outages:   {num_outages}
@@ -70,7 +69,7 @@ Threshold:      {MIN_OUTAGE_THRESHOLD}
 '''
 
 # print the total time for request timeouts
-print(summary)
+print(f'\n{summary}')
 # write summary to file
 with open(OUTPUT_SUMMARY_FILE, "w") as f:
     f.write(summary)
