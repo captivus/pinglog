@@ -3,6 +3,8 @@ TODO:
 * Wrap all of this in functions
 * Add start and end date parameters as filters
 * Calculate uptime in between outages
+* Add webserver target as parameter
+* Create python command line utility
 '''
 
 import datetime
