@@ -1,6 +1,10 @@
 # pinglog -- an internet connectivity logging utility
-This shell script pings a web server and logs responses to determine local internet downtime.
+This shell script pings a web server and logs responses to determine local Internet downtime.
 The Python program analyzes these logs to identify outages and provide summary data.
+
+## Instructions
+* Run pinglog.sh on your local machine and let it keep running in the background
+* Run pinglog.py on your logfile at any time to generate summary data on local Internet outages.
 
 ## Example Summary Output
 Start Date:     2022-08-15 11:19:14
