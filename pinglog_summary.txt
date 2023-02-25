@@ -1,7 +1,7 @@
 Start Date:     2022-08-15 11:19:14
-End Date:       2023-02-23 10:08:40
-Days:           191
-# of Outages:   65
+End Date:       2023-02-25 13:56:49
+Days:           194
+# of Outages:   67
 Min Outage:     0:01:33
 Max Outage:     11:00:42
 Threshold:      0:01:30
