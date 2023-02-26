@@ -57,6 +57,8 @@ outages = { k: v for k, v in outages.items() if v > MIN_OUTAGE_THRESHOLD }
 num_outages = len(outages)
 min_outage = min(outages.values())
 max_outage = max(outages.values())
+most_recent_outage_date = sorted(outages.keys())[-1]
+most_recent_outage_duration = outages[most_recent_outage_date]
 
 # create summary of outages
 summary = f'''Start Date:     {start_date}
@@ -65,6 +67,7 @@ Days:           {(end_date - start_date).days}
 # of Outages:   {num_outages}
 Min Outage:     {min_outage}
 Max Outage:     {max_outage}
+Recent Outage:  {most_recent_outage_date}: {most_recent_outage_duration}
 Threshold:      {MIN_OUTAGE_THRESHOLD}
 '''
 
