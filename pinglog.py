@@ -8,6 +8,7 @@ TODO:
 '''
 
 import datetime
+import os
 
 # CONFIG
 INPUT_LOGFILE = "./logs/output_pinglog.txt"
@@ -24,10 +25,13 @@ outage_time = 0
 outages = {}
 line_counter = 0
 begin_time = datetime.datetime.now()
+FILE_SIZE = 0.0
 
 # read file and split into lines
 with open(INPUT_LOGFILE, "r") as f:
     lines = f.readlines()
+
+FILE_SIZE = round(os.path.getsize(INPUT_LOGFILE) / (1024 * 1024), 2)
 
 # loop through lines
 for line in lines:
@@ -73,7 +77,7 @@ Min Outage:     {min_outage}
 Max Outage:     {max_outage}
 Recent Outage:  {most_recent_outage_date}: {most_recent_outage_duration}
 Threshold:      {MIN_OUTAGE_THRESHOLD}
-Processed {line_counter: ,} records in {processing_time}
+Processed {line_counter:,} records ({FILE_SIZE:,} MB) in {processing_time}
 '''
 
 
