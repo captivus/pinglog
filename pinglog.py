@@ -22,7 +22,8 @@ start_time = None
 last_time = None
 outage_time = 0
 outages = {}
-
+line_counter = 0
+begin_time = datetime.datetime.now()
 
 # read file and split into lines
 with open(INPUT_LOGFILE, "r") as f:
@@ -30,6 +31,7 @@ with open(INPUT_LOGFILE, "r") as f:
 
 # loop through lines
 for line in lines:
+    line_counter += 1
     if "Request timeout" in line:
         # if this is the first request timeout line in a block, record the start time
         if start_time is None:
@@ -59,6 +61,8 @@ min_outage = min(outages.values())
 max_outage = max(outages.values())
 most_recent_outage_date = sorted(outages.keys())[-1]
 most_recent_outage_duration = outages[most_recent_outage_date]
+end_time = datetime.datetime.now()
+processing_time = end_time - begin_time
 
 # create summary of outages
 summary = f'''Start Date:     {start_date}
@@ -69,6 +73,7 @@ Min Outage:     {min_outage}
 Max Outage:     {max_outage}
 Recent Outage:  {most_recent_outage_date}: {most_recent_outage_duration}
 Threshold:      {MIN_OUTAGE_THRESHOLD}
+Processed {line_counter} in {processing_time}
 '''
 
 # print the total time for request timeouts
