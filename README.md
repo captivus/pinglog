@@ -8,12 +8,17 @@ The Python program analyzes these logs to identify outages and provide summary d
 
 ## Example Summary Output
 Start Date:     2022-08-15 11:19:14\
-End Date:       2023-02-23 10:08:40\
-Days:           191\
-\# of Outages:   65\
+End Date:       2023-02-26 20:43:37\
+Days:           195\
+\# of Outages:   68\
 Min Outage:     0:01:33\
 Max Outage:     11:00:42\
-Threshold:      0:01:30
+Recent Outage:  2023-02-26 08:53:17: 0:01:58\
+Threshold:      0:01:30\
+Processed 6,704,556 records (614.72 MB) in 0:00:05.990166
+
+Summary written to pinglog_summary.txt\
+Outages written to pinglog_outages.csv
 
 
 ## Example Outage Log
