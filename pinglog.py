@@ -73,8 +73,9 @@ Min Outage:     {min_outage}
 Max Outage:     {max_outage}
 Recent Outage:  {most_recent_outage_date}: {most_recent_outage_duration}
 Threshold:      {MIN_OUTAGE_THRESHOLD}
-Processed {line_counter} in {processing_time}
+Processed {line_counter: ,} records in {processing_time}
 '''
+
 
 # print the total time for request timeouts
 print(f'\n{summary}')
