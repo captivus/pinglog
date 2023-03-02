@@ -5,6 +5,7 @@ TODO:
 * Calculate uptime in between outages
 * Add webserver target as parameter
 * Create python command line utility
+* Add dates for min and max outage
 '''
 
 import datetime
