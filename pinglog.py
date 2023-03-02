@@ -41,7 +41,7 @@ for line in lines:
         if start_time is None:
             start_time = datetime.datetime.strptime(line[:28], "%a %b %d %H:%M:%S %Z %Y")
         last_time = datetime.datetime.strptime(line[:28], "%a %b %d %H:%M:%S %Z %Y")
-    else:
+    elif "64 bytes from" in line:
         # we're back online, so calculate outage time and reset start_time
         if start_time is not None:
             outage_time = last_time - start_time

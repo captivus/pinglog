@@ -1,9 +1,9 @@
 Start Date:     2022-08-15 11:19:14
-End Date:       2023-02-27 10:56:18
-Days:           195
-# of Outages:   68
-Min Outage:     0:01:33
+End Date:       2023-03-02 09:42:15
+Days:           198
+# of Outages:   69
+Min Outage:     0:01:46
 Max Outage:     11:00:42
-Recent Outage:  2023-02-26 08:53:17: 0:01:58
+Recent Outage:  2023-03-01 18:50:03: 0:03:53
 Threshold:      0:01:30
-Processed 6,755,400 records (619.46 MB) in 0:00:06.637802
+Processed 7,008,824 records (643.03 MB) in 0:00:07.105538
