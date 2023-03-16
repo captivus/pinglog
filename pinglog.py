@@ -1,5 +1,6 @@
 '''
 TODO:
+* Revise from Mac style ping to Linux-style ping (ping -O?) (see https://superuser.com/questions/270083/linux-ping-show-time-out)
 * Wrap all of this in functions
 * Add start and end date parameters as filters
 * Calculate uptime in between outages
